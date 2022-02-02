@@ -1,6 +1,7 @@
 import pygame
 import random
 import string
+from words import words
 from words2 import five_letter_words
 from cell import Cell
 
@@ -9,7 +10,8 @@ pygame.font.init()
 font = pygame.font.Font('freesansbold.ttf', 22)
 
 
-WORDS = [w.upper() for w in five_letter_words]
+WORDS = [w.upper() for w in words]
+print(len(WORDS))
 
 WIDTH, HEIGHT = 500, 700
 
@@ -95,15 +97,22 @@ def main():
                             else:
                                 row_verdict.append(GREY)
                     except:
+                        show_error_message(
+                            window, "Write a valid five letter word!")
                         print("Write a valid five letter word!")
 
                     if column == 4 and grid[row][column].get_letter() != None:
                         for c in range(5):
                             grid[row][c].processed = True
                             grid[row][c].set_color(row_verdict[c])
-                        # if row < 5:
-                        row += 1
-                        column = 0
+                        if current_word not in WORDS:
+                            show_error_message(window, "NOT IN OUR WORD LIST!")
+                            for col in range(5):
+                                grid[row][col].set_color(None)
+                                grid[row][col].processed = False
+                        else:
+                            row += 1
+                            column = 0
                     try:
                         if current_word == target_word:
                             dummy_word = target_word
@@ -122,7 +131,7 @@ def main():
                             error_message = "Enter a valid English Alphabet"
                             show_error_message(window, error_message)
                             raise Exception(error_message)
-                        print(chr(letter).upper())
+                        # print(chr(letter).upper())
                         if grid[row][column].get_letter() == None:
                             grid[row][column].assign_letter(
                                 chr(letter).upper())
