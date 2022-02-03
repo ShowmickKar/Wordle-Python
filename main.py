@@ -10,7 +10,8 @@ pygame.font.init()
 font = pygame.font.Font('freesansbold.ttf', 22)
 
 
-WORDS = [w.upper() for w in words]
+WORDS = [w.upper() for w in five_letter_words]
+ADDITIONAL_WORDS = [w.upper() for w in words]
 
 WIDTH, HEIGHT = 500, 700
 
@@ -107,7 +108,7 @@ def main():
                         for c in range(5):
                             grid[row][c].processed = True
                             grid[row][c].set_color(row_verdict[c])
-                        if current_word not in WORDS:
+                        if current_word not in ADDITIONAL_WORDS and current_word not in WORDS:
                             show_error_message(window, "NOT IN OUR WORD LIST!")
                             for col in range(5):
                                 grid[row][col].set_color(None)
