@@ -17,7 +17,6 @@ A simple low-key clone of the popular game WORDLE made with python and a 2D Grap
 ```
     python main.py
 ```
-and voila!</br>
 7. If you are on Mac, the process should be pretty much the same. Just use the terminal instead of Command prompt. If you are a Linux user, you should probably know your way around stuff. :p
 8. I hope you like it!
 
