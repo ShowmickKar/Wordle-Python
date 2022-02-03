@@ -11,7 +11,6 @@ font = pygame.font.Font('freesansbold.ttf', 22)
 
 
 WORDS = [w.upper() for w in words]
-print(len(WORDS))
 
 WIDTH, HEIGHT = 500, 700
 
@@ -47,7 +46,7 @@ def show_ending_scene(window, word, won):
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                pygame.quit
+                pygame.quit()
             if event.type == pygame.KEYDOWN:
                 pygame.time.delay(100)
                 main()
@@ -75,14 +74,12 @@ def main():
     row, column = (0, 0)
     while run:
         if dummy_word is not None:
-            print("Hello")
             show_ending_scene(window, target_word, dummy_verdict)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
                 pygame.quit()
             if event.type == pygame.KEYDOWN:
-                print(column)
                 if event.key == pygame.K_BACKSPACE:
                     if column > 0:
                         if grid[row][column].get_letter() != None:
@@ -104,7 +101,6 @@ def main():
                     except:
                         show_error_message(
                             window, "Write a valid five letter word!")
-                        print("Write a valid five letter word!")
 
                     if column == 4 and grid[row][column].get_letter() != None:
                         for c in range(5):
@@ -149,7 +145,6 @@ def main():
                         if (str(e) == "list index out of range"):
                             run = False
                             pygame.quit()
-                        print(e)
 
         draw(window, grid)
 
