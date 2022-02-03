@@ -44,8 +44,13 @@ def show_ending_scene(window, word, won):
     message_screen = font.render(message, False, (255, 0, 0))
     window.blit(message_screen, (50, 620))
     pygame.display.update()
-    pygame.time.delay(3000)
-    main()
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit
+            if event.type == pygame.KEYDOWN:
+                pygame.time.delay(100)
+                main()
 
 
 def get_word_from_current_row(grid, row):
