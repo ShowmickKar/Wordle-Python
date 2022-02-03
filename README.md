@@ -2,8 +2,6 @@
 
 A simple low-key clone of the popular game WORDLE made with python and a 2D Graphics module Pygame.
 
-A simple low-key clone of the popular game WORDLE made with python and a 2D Graphics module Pygame.
-
 ## To run the game on your computer
 1. To install python head over to their official website and go through the standard installation process https://www.python.org/
 2. If you have any trouble with the installation you can watch a tutorial video: https://www.youtube.com/watch?v=Kn1HF3oD19c&ab_channel=AmitThinks
