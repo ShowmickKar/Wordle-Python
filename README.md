@@ -15,9 +15,9 @@ A simple low-key clone of the popular game WORDLE made with python and a 2D Grap
 5. Extract the ZIP file in your desired folder.
 6. From now on you can run the code in two ways, first and the easiest thing to do is to open the folder in your favorite IDE and run the main.py file. If you don't have an IDE on your computer and don't wish to install one, you can still run the game. Just open the project folder, click on the location bar, type 'cmd', and hit enter. Your Windows command prompt should open up. Run the command
 ```
-python main.py
+    python main.py
 ```
-and voila!
+and voila!</br>
 7. If you are on Mac, the process should be pretty much the same. Just use the terminal instead of Command prompt. If you are a Linux user, you should probably know your way around stuff. :p
 8. I hope you like it!
 
