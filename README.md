@@ -20,8 +20,4 @@ I hope you like it!
 
 ## Screenshot
 
-<img src="SCREENSHOT.png" alt="screenshot-1" width="700"/>
-
-## Screenshot
-
 <img src="SCREENSHOT.png" alt="screenshot-1" width="250"/>
