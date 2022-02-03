@@ -74,6 +74,7 @@ def main():
     row, column = (0, 0)
     while run:
         if dummy_word is not None:
+            dummy_verdict = True if target_word == dummy_word else False
             show_ending_scene(window, target_word, dummy_verdict)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -117,10 +118,8 @@ def main():
                     try:
                         if current_word == target_word:
                             dummy_word = target_word
-                            dummy_verdict = True
                         if row > 5:
                             dummy_word = current_word
-                            dummy_verdict = False
                     except:
                         show_error_message(
                             window, "Write a valid five letter word!")
