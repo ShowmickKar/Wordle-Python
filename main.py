@@ -71,7 +71,7 @@ def main():
     target_word = select_random_word()
     dummy_word = None
     dummy_verdict = False
-    print(target_word)
+#     print(target_word)
     row, column = (0, 0)
     while run:
         if dummy_word is not None:
