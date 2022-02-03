@@ -39,7 +39,7 @@ def show_error_message(window, error_message):
 
 
 def show_ending_scene(window, word, won):
-    message = f"Congratulations! the word was {word}" if won else f"!!!You lost!!! the ward was {word}"
+    message = f"Congratulations! the word was {word}" if won else f"!!!You lost!!! the word was {word}"
     message_screen = font.render(message, False, (255, 0, 0))
     window.blit(message_screen, (50, 620))
     pygame.display.update()
@@ -48,7 +48,7 @@ def show_ending_scene(window, word, won):
             if event.type == pygame.QUIT:
                 pygame.quit()
             if event.type == pygame.KEYDOWN:
-                pygame.time.delay(100)
+                pygame.time.delay(300)
                 main()
 
 
