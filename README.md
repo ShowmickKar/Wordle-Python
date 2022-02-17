@@ -25,4 +25,4 @@ A simple low-key clone of the popular game WORDLE made with python and a 2D Grap
 
 ## Screenshot
 
-<img src="SCREENSHOT.png" alt="ARCHIVED/screenshot-1" width="250"/>
+<img src="SCREENSHOT.png" alt="ARCHIVED/SCREENCHOT" width="250"/>
