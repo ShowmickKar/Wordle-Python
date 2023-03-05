@@ -30,7 +30,6 @@ class Game:
         print("\n###########################################\n")
 
     def generate_random_word(self):
-        return "DODGE"
         return random.choice(WORDS)
 
     def event_handler(self):
